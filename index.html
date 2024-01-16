@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .wrapper {
+            width: 100%;
+            padding: 0px;
+
+        }
+
+        .header_nav {
+            background-color: #FFF;
+            box-sizing: border-box;
+            height: 72px;
+            display: flex;
+
+
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .search_box {
+
+            width: 360px;
+            height: 42px;
+            color: #5C5C5C;
+            font-size: 14px;
+            border-radius: 21px;
+            background-color: #F2F2F2;
+        }
+
+        .hero {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.60) 100%), url('./assets/Rectangle2.png');
+            background-size: contain;
+            background-position: center;
+            height: 400px;
+            width: 100%;
+            margin-bottom: 32px;
+
+        }
+
+        .hero-container {
+            position: relative;
+            top: 286px;
+            left: 200px;
+        }
+
+        .hero-heading {
+            color: #FFF;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 0;
+
+        }
+
+        .hero-subheading {
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .main {
+            max-width: 1040px;
+            border-bottom: #E0E0E0 1px solid;
+        }
+
+        .nav-btn-post {
+            color: #000;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            border-radius: 4px;
+            background: #EDEEF0;
+        }
+
+        .nav-btn-group {
+            color: #FFF;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            border-radius: 4px;
+            background: #2F6CE5;
+        }
+
+        .posts {
+            margin-top: 28px;
+        }
+
+        .card-img {
+            max-width: 692px;
+            height: 220px;
+            flex-shrink: 0;
+            border-radius: 4px 4px 0px 0px;
+            background-color: lightgray 50% / cover no-repeat, #C4C4C4;
+        }
+
+        .card-body .heading {
+            color: #000;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .card-body .subheading {
+            max-width: 600px;
+            color: #000;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 134.167%;
+            /* 29.517px */
+        }
+
+        .card-body .text {
+            max-width: 652px;
+            color: #5C5C5C;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 134.167%;
+            /* 25.492px */
+            margin-bottom: 11px;
+        }
+
+        .card-1 {
+            background-image: url(./assets/cards/Rectangle5.png);
+        }
+        .user{
+            margin-top: 0px;
+        }
+        .user .profile img{
+                width: 48px;
+                height: 48px;
+
+            }
+        .user .share-btn{
+            border-radius: 4px;
+            background-color: #F1F3F5;
+            width: 42px;
+            height: 36px;
+        }
+        .user .share-btn .img-1{           
+            width: 18px;
+            height: 18px;
+        }
+        .user-name .name{
+            color: #000;           
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+         
+
+        @media screen and (max-width:991px) {
+            body {
+                background-color: #e5e5e5;
+            }
+
+            .wrapper {
+                width: 360px;
+                background-color: #FFF;
+            }
+
+            .hero {
+                height: 236px;
+                margin-bottom: 0px;
+            }
+
+            .header_nav {
+                height: fit-content;
+            }
+
+            .main {
+                border: none;
+            }
+
+            .hero {
+                position: relative;
+            }
+
+            .hero-container {
+                position: absolute;
+                top: 168px;
+                left: 16px;
+            }
+
+            .hero-heading {
+                display: block;
+                font-size: 17px;
+                padding: 0;
+
+            }
+
+            .hero-subheading {
+                font-size: 12px;
+            }
+
+            .hero-nav {
+
+                padding: 14px 18px;
+            }
+
+            .posts {
+                margin: 0px;
+            }
+
+            .card {
+                border: none;
+            }
+
+            .card-body .heading {
+                font-size: 13px;
+            }
+
+            .card-body .subheading {
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+
+            .card-body .text {
+                white-space: nowrap;
+                /* Prevents the text from wrapping to the next line */
+                overflow: hidden;
+                /* Hides any overflowing content */
+                text-overflow: ellipsis;
+                font-size: 14px;
+
+                /* 25.492px */
+            }
+            .user .share-btn{
+                border-radius: 4px;
+                background-color: #F1F3F5;
+                width: 70px;
+                height: 36px;
+            }
+            .user .share-btn .img-1{
+               width: 18px;
+               height: 18px;
+               margin: 0px;
+            }
+            .user .profile img{
+                width: 37px;
+                height: 37px;
+
+            }
+            .user > div{
+                padding-left: 0px;
+            }
+            .user-name{
+                margin-right: 12px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid wrapper">
+        <header class="header_nav  ">
+            <nav class="d-lg-flex my-auto w-100 nav-container d-none ">
+
+                <img src="./assets/whole.png" alt="logo" class="my-auto " style="margin-left: 72px;" style="width: 162.566px;
+                height: 24px;">
+
+                <div class="search_box py-2 px-3 ">
+                    <img src="./assets/search.svg" alt="">
+                    <span class="">Search for your favorite groups in ATG</span>
+                </div>
+                <div class="for_account my-auto me-3">
+                    <span>Create account.</span>
+                    <span style="color: #2F6CE5;"> It’s free!</span>
+                    <img src="./assets/baseline-arrow_drop_down-24px.jpg" alt="dropdown button" width="24px" ;
+                        height="24px" ;>
+                </div>
+
+            </nav>
+
+            <div class="d-lg-none d-flex justify-content-end align-items-center"
+                style="height: 24px; width: 100%; background-color: #F8F9FA;">
+                <img src="./assets/Group 3.svg" alt="" style="width: 51px; height: 10px;" class="me-3">
+            </div>
+
+        </header>
+
+        <section class="hero ">
+            <div class="d-lg-none w-100 d-flex hero-nav">
+                <img src="./assets/hero/arrow_back_24px.png" alt="back-btn" class="me-auto my-auto" height="24px">
+                <img src="./assets/hero/Group5.svg" alt="group-join" class="ms-auto">
+            </div>
+            <div class="hero-container ">
+                <p class="hero-heading">
+                    Computer Engineering
+                </p>
+
+                <p class="hero-subheading">142,765 Computer Engineers follow this</p>
+            </div>
+        </section>
+
+        <!-- hero ends here -->
+
+        <section class="main mx-auto">
+
+            <nav class="navbar navbar-expand-lg ">
+
+                <div class="d-lg-none p-0 m-0 w-100 d-flex">
+                    <div class="col-6 py-auto">
+                        <img src="./assets/nav-post/Posts(368).svg" alt="" height="12px" width="74px" class="my-auto"
+                            style="margin-left: 17.8px;">
+                    </div>
+                    <div class="col-6">
+                        <div style="background-image: url(./assets/nav-post/Rectangle4.svg); max-width: 106px; height: 32px;"
+                            class="ms-auto me-2">
+                            <img src="./assets/nav-post/Filter_ All.svg" alt="" class="my-auto"
+                                style="margin-left: 11.12px; margin-right: 11.9px;">
+                            <img src="./assets/nav-post/baseline-arrow_drop_down-24px.svg" alt="" class="my-auto">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="container-fluid p-0 ">
+
+
+
+                    <div class="collapse navbar-collapse" id="navbarsExample06">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link active " style="color: #000;" aria-current="page" href="#">All
+                                    Posts(32)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: #8A8A8A;">Article</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " style="color: #8A8A8A;">Event</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " style="color: #8A8A8A;">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " style="color: #8A8A8A;">Job</a>
+                            </li>
+                        </ul>
+
+                        <div class=" nav-btn ms-auto d-flex">
+                            <div class="nav-btn-post p-2 me-4">
+                                <span>Write a Post</span>
+                                <img src="./assets/baseline-arrow_drop_down-24px.png" alt="">
+                            </div>
+                            <div class="nav-btn-group p-2">
+                                <img src="./assets/baseline-group_add-24px.png" alt="">
+                                <span>Join Group</span>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </nav>
+
+
+
+        </section>
+
+        <!-- nav end here -->
+
+        <section class="main posts mx-auto ">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class=" col-lg-8 p-0">
+
+                        <div class="card ">
+                            <div class="card-header card-1 card-img p-0">
+
+                            </div>
+                            <div class="card-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <p class="heading p-0">✍️ Article</p>
+                                        <p class="subheading col-lg-11 p-0 col-11 ">What if famous brands had regular
+                                            fonts?
+                                            Meet RegulaBrands!</p>
+                                        <div class="col-lg-1 col-1 p-sm-0 p-lg-auto">
+                                            <img src="./assets/cards/baseline-more_vert-24px.svg" alt="btn-logo"
+                                                style="margin-left:24px;" class="m-sm-0 ">
+                                        </div>
+                                        <p class="text col-lg-12 p-0">I’ve worked in UX for the better part of a decade.
+                                            From now on, I plan to rei…</p>
+                                    </div>
+                                    <!-- user  -->
+                                    <div class="user row ">
+                                        <div class="col-2 col-lg-1 profile">
+                                            <img src="./assets/users/1st/Rectangle3.1.svg" alt="user">
+                                        </div>
+                                        <div class="col-7 my-auto user-name col-lg-10 d-lg-flex">
+                                            <img src="./assets/users/Group 7.svg" alt="" class="d-lg-none">
+                                            <span class="d-none d-lg-inline name">Sarthak Kamra</span>
+                                            <div class="d-none d-lg-inline ms-auto me-lg-4">
+                                                <img src="./assets/users/visibility_24px.svg" alt="">
+                                                <span style="color: #525252; font-size: 14px;" >1.4k views</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 share-btn py-1 px-1 col-lg-1 my-auto"  >                                            
+                                            <img src="./assets/users/baseline-share-24px.svg" alt="" class="my-auto mx-lg-2 img-1">
+                                            <img src="./assets/users/Share.svg" alt="share" class="my-auto d-lg-none">
+                                            
+
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- 1st user ends  -->
+
+                    </div>
+
+                    <div class="col-lg-4">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Banao Tech -(Hrushikesh Mahadik)</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -154,6 +154,13 @@
         .card-1 {
             background-image: url(./assets/cards/Rectangle5.png);
         }
+        .card-2 {
+            background-image: url(./assets/cards/Rectangle5-2.png);
+        }
+        .card-3 {
+            background-image: url(./assets/cards/Rectangle5-3.png);
+        }
+
         .user{
             margin-top: 0px;
         }
@@ -179,7 +186,33 @@
             font-weight: 600;
             line-height: normal;
         }
-         
+        .time-card span{
+            color: #000;           
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        .content span{
+            color: #000;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .sidebar .content{
+            border-bottom: 1px #B8B8B8 solid; 
+            padding-bottom: 3px;
+        }
+        .error {
+            margin-top: 30px;
+            color: #000;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            opacity: 0.5;
+        }         
 
         @media screen and (max-width:991px) {
             body {
@@ -236,6 +269,8 @@
 
             .card {
                 border: none;
+                fill: #FFF;
+                filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.12));
             }
 
             .card-body .heading {
@@ -279,6 +314,25 @@
             .user-name{
                 margin-right: 12px;
             }
+            .card-end{
+                background-color: #e5e5e5;
+                height:2px ;
+
+            }
+            .time-card span{
+            color: #000;           
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin:auto 0px auto 0px ;
+            white-space: nowrap;
+            /* Prevents the text from wrapping to the next line */
+            overflow: hidden;
+            /* Hides any overflowing content */
+            text-overflow: ellipsis;
+        }
+           
 
         }
     </style>
@@ -402,7 +456,8 @@
                 <div class="row">
                     <div class=" col-lg-8 p-0">
 
-                        <div class="card ">
+                        <!-- 1 st card starts  -->
+                        <div class="card my-lg-1">
                             <div class="card-header card-1 card-img p-0">
 
                             </div>
@@ -446,13 +501,185 @@
 
                             </div>
                         </div>
-
+                        <div class="card-end d-lg-none w-100" >
+                        </div>
                         <!-- 1st user ends  -->
+
+                        <!-- 2nd card starts -->
+                        <div class="card my-lg-1 ">
+                            <div class="card-header card-2 card-img p-0">
+                                <!-- image here -->
+                            </div>
+                            <div class="card-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <p class="heading p-0">🔬️ Education</p>
+                                        <p class="subheading col-lg-11 p-0 col-11 ">Tax Benefits for Investment under National Pension Scheme launched by Government</p>
+                                        <div class="col-lg-1 col-1 p-sm-0 p-lg-auto">
+                                            <img src="./assets/cards/baseline-more_vert-24px.svg" alt="btn-logo"
+                                                style="margin-left:24px;" class="m-sm-0 ">
+                                        </div>
+                                        <p class="text col-lg-12 p-0">I’ve worked in UX for the better part of a decade.
+                                            From now on, I plan to rei…</p>
+                                    </div>
+                                    <!-- user  -->
+                                    <div class="user row ">
+                                        <div class="col-2 col-lg-1 profile">
+                                            <img src="./assets/users/2nd/Rectangle3.png" alt="user">
+                                        </div>
+                                        <div class="col-7 my-auto user-name col-lg-10 d-lg-flex">
+                                            <img src="./assets/users/Group 7.svg" alt="" class="d-lg-none">
+                                            <span class="d-none d-lg-inline name">Sarah West</span>
+                                            <div class="d-none d-lg-inline ms-auto me-lg-4">
+                                                <img src="./assets/users/visibility_24px.svg" alt="">
+                                                <span style="color: #525252; font-size: 14px;" >1.4k views</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 share-btn py-1 px-1 col-lg-1 my-auto"  >                                            
+                                            <img src="./assets/users/baseline-share-24px.svg" alt="" class="my-auto mx-lg-2 img-1">
+                                            <img src="./assets/users/Share.svg" alt="share" class="my-auto d-lg-none">
+                                            
+
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card-end d-lg-none w-100" >
+                        </div>
+                        <!-- 2nd card ends  -->
+
+                        <!-- 3rd user starts -->
+                        <div class="card my-lg-1 ">
+                            <div class="card-header card-3 card-img p-0">
+                                <!-- image here -->
+                            </div>
+                            <div class="card-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <p class="heading p-0">🗓️ Meetup</p>
+                                        <p class="subheading col-lg-11 p-0 col-11 ">Finance & Investment Elite Social Mixer @Lujiazui</p>
+                                        <div class="col-lg-1 col-1 p-sm-0 p-lg-auto">
+                                            <img src="./assets/cards/baseline-more_vert-24px.svg" alt="btn-logo"
+                                                style="margin-left:24px;" class="m-sm-0 ">
+                                        </div>
+                                        <div class="row px-0 time-card mb-2">
+                                            <div class="col-6 d-flex">
+                                                <img src="./assets/cards/baseline-today-24px.svg" alt="" class="my-auto">
+                                                <span >Fri, 12 Oct, 2018</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="./assets/cards/outline-location_on-24px.svg" alt="">
+                                                <span>Ahmedabad, India</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 btn mb-2"  style="border-radius: 8px; border: 0.7px solid #A9AEB8; background: #FFF;">
+                                        <span style="text-align: center; color: #E56135;font-size: 13px; font-weight: 600;">Visit Website</span>
+                                    </div>
+                                    <!-- user  -->
+                                    <div class="user row ">
+                                        <div class="col-2 col-lg-1 profile">
+                                            <img src="./assets/users/3rd/Rectangle3.png" alt="user">
+                                        </div>
+                                        <div class="col-7 my-auto user-name col-lg-10 d-lg-flex">
+                                            <img src="./assets/users/Group 7.svg" alt="" class="d-lg-none">
+                                            <span class="d-none d-lg-inline name">Ronal Jones</span>
+                                            <div class="d-none d-lg-inline ms-auto me-lg-4">
+                                                <img src="./assets/users/visibility_24px.svg" alt="">
+                                                <span style="color: #525252; font-size: 14px;" >1.4k views</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 share-btn py-1 px-1 col-lg-1 my-auto"  >                                            
+                                            <img src="./assets/users/baseline-share-24px.svg" alt="" class="my-auto mx-lg-2 img-1">
+                                            <img src="./assets/users/Share.svg" alt="share" class="my-auto d-lg-none">
+                                            
+
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card-end d-lg-none w-100" >
+                        </div>
+                        <!-- 3rd user ends -->
+
+                        <!-- 4th user  -->
+                        <div class="card my-lg-1 ">
+                            <div class="card-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <p class="heading p-0">💼️ Job</p>
+                                        <p class="subheading col-lg-11 p-0 col-11 ">Software Developer</p>
+                                        <div class="col-lg-1 col-1 p-sm-0 p-lg-auto">
+                                            <img src="./assets/cards/baseline-more_vert-24px.svg" alt="btn-logo"
+                                                style="margin-left:24px;" class="m-sm-0 ">
+                                        </div>
+                                        <div class="row px-0 time-card mb-2">
+                                            <div class="col-6 d-flex">
+                                                <img src="./assets/users/4th/outline-work_outline-24px.svg" alt="" class="my-auto">
+                                                <span >Innovaccer Analytics Private Ltd.</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="./assets/cards/outline-location_on-24px.svg" alt="">
+                                                <span>Noida, India</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 btn mb-2"  style="border-radius: 8px; border: 0.7px solid #A9AEB8; background: #FFF;">
+                                        <span style="text-align: center; color: #02B875;font-size: 13px; font-weight: 600;">Apply on Timesjobs</span>
+                                    </div>
+                                    <!-- user  -->
+                                    <div class="user row ">
+                                        <div class="col-2 col-lg-1 profile">
+                                            <img src="./assets/users/4th/Rectangle3.png" alt="user">
+                                        </div>
+                                        <div class="col-7 my-auto user-name col-lg-10 d-lg-flex">
+                                            <img src="./assets/users/Group 7.svg" alt="" class="d-lg-none">
+                                            <span class="d-none d-lg-inline name">Joseph Gray</span>
+                                            <div class="d-none d-lg-inline ms-auto me-lg-4">
+                                                <img src="./assets/users/visibility_24px.svg" alt="">
+                                                <span style="color: #525252; font-size: 14px;" >1.4k views</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 share-btn py-1 px-1 col-lg-1 my-auto"  >                                            
+                                            <img src="./assets/users/baseline-share-24px.svg" alt="" class="my-auto mx-lg-2 img-1">
+                                            <img src="./assets/users/Share.svg" alt="share" class="my-auto d-lg-none">
+                                            
+
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card-end d-lg-none w-100" >
+                        </div>
+                        <!-- 4th user ends  -->
 
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <div class="d-none d-lg-block sidebar" style="margin-left:105px ;">
+                            <div class="row  content">
+                                <img src="./assets/sideBar/outline-location_on-24px 2.svg" alt="" class="col-2" width="18px" height="18px">
+                                <span class="col-8">Noida, India</span>
+                                <img src="./assets/sideBar/baseline-edit-24px.svg" alt="edit" width="20px" height="20px" class="col-2">
+                            </div>
 
+                            <div class="error row">
+                                <img src="./assets/sideBar/baseline-error_outline-24px.svg" alt="" height="16px" width="16px" class="col-1 p-0">
+                                <span class="col-10 p-0">Your location will help us serve better and extend a personalised experience. </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
